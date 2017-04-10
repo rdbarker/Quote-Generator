@@ -1,0 +1,31 @@
+body{
+  background-image: url("https://source.unsplash.com/category/nature");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+
+}
+
+.vertical-center {
+  margin-top: 50%;
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 6px;
+  padding: 12px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.quote{
+  text-align: center;
+  color: white;
+  padding: 12px;
+}
+
+.source{
+  color: rgb(163, 163, 163);
+}
+
+.btn{
+  color: rgb(163, 163, 163);
+}
