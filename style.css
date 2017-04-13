@@ -1,31 +1,91 @@
-body{
-  background-image: url("https://source.unsplash.com/category/nature");
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: black;
+/*
+*Main HTML Content
+*/
 
+body{
+margin: 0;
+font-family: 'Merriweather', serif;
+font-size: 20px;
 }
 
-.vertical-center {
-  margin-top: 50%;
-  background-color: rgba(0,0,0, 0.5);
+
+i:hover{
+  color: rgb(255, 255, 255);
+}
+
+.container{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://source.unsplash.com/category/nature");
+  background-position: center center;
+  background-size: cover;
+  background-color: black;
+}
+
+/*Quote Box*/
+.quote-box {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255,255,255, 0.5);
   border-radius: 6px;
-  padding: 12px;
-  width: 50%;
-  margin-left: 25%;
+  width: 75%;
 }
 
 .quote{
+  width: 100%;
+  order: -1;
   text-align: center;
-  color: white;
-  padding: 12px;
+  color: #353535;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/*Footer With Buttons and Source*/
+.quote-footer{
+  margin-top: 8%;
+
 }
 
 .source{
-  color: rgb(163, 163, 163);
+  color: rgb(84, 84, 84);
+  font-size: .8em;
+  text-align: right;
+  width: 95%;
+  order: 1;
 }
 
-.btn{
-  color: rgb(163, 163, 163);
+.button-span{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  order: 2;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.footer-btns{
+  margin: auto;
+  color: rgb(84, 84, 84);
+}
+
+/*
+*Screen Size Adjustments
+*/
+
+
+@media screen and (min-width: 800px){
+  .quote-box{ width: 60%;}
+}
+
+@media screen and (min-width: 1100px){
+  .quote-box{ width: 50%;}
+}
+
+@media screen and (min-width: 1400px){
+  .quote-box{ width: 40%;}
 }
