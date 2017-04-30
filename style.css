@@ -6,8 +6,12 @@ body{
 margin: 0;
 font-family: 'Merriweather', serif;
 font-size: 20px;
+height: 100%;
 }
 
+html{
+  height: 100%;
+}
 
 i:hover{
   color: rgb(255, 255, 255);
@@ -46,6 +50,7 @@ i:hover{
 /*Footer With Buttons and Source*/
 .quote-footer{
   margin-top: 8%;
+  width: 100%;
 
 }
 
@@ -60,16 +65,15 @@ i:hover{
 .button-span{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   order: 2;
-  padding-left: 12.5%;
-  padding-right: 12.5%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2%;
   margin-bottom: 2%;
 }
 
 .footer-btns{
-  margin: auto;
   color: rgb(84, 84, 84);
 }
 
@@ -77,6 +81,23 @@ i:hover{
 *Screen Size Adjustments
 */
 
+
+@media screen and (min-width: 500px){
+  .button-span{
+    width: 50%;
+    order: 1;
+    justify-content: flex-start;
+  }
+  .footer-btns{
+    margin-left: 20px;
+  }
+  .source{
+    width: 40%;
+    order: 2;
+    margin-right: 20px;
+    margin-top: 8px;
+  }
+}
 
 @media screen and (min-width: 800px){
   .quote-box{ width: 60%;}
